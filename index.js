@@ -26,6 +26,17 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+const lunchSpecial = {
+  discountMethod: function(string) {
+    if (string === 'teacher' || string === 'student'){
+      return 18-(18*.25);
+    } else {
+      return 18-(18*.10);
+    }
+  }
+}
+
+console.log(lunchSpecial.discountMethod('teacher'));
 
 
 ///////////////Reviews (MVP)///////////////////
