@@ -53,9 +53,16 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 
 /* Task 3: Console.log just Julius' feedback */
 
+console.log(reviews[6].feedback);
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+function newRating(name, rating, feedback){
+  reviews.push({name, rating, feedback});
+  return reviews;
+}
+
+console.log(newRating('Alecsandra', 3, "The food was basic but good."))
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
@@ -76,6 +83,10 @@ function getReviewByIndex(reviews, index) {
   }
   
 
+
+
+
+
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
 getLastReview should accept:
@@ -88,6 +99,16 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 function getLastReview(/* code here */) {
     /* code here */
   } 
+
+
+
+
+
+
+
+
+
+
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
