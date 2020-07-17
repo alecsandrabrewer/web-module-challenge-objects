@@ -97,11 +97,11 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(arrayName) {
-    return reviews.pop();
-  } 
+// function getLastReview(arrayName) {
+//     return reviews.pop();
+//   } 
 
-console.log(getLastReview(reviews));
+// console.log(getLastReview(reviews));
 
 
 
@@ -122,9 +122,16 @@ console.log(getLastReview(reviews));
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(array, rate) {
+   for (let i = 0; i > array.length; i++){
+      if (array[i].rating.includes(rate))
+      return array[i];
+   }
   }
+ 
+  console.log(getReviewByRating(reviews, 4));
+
+
 
   
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
